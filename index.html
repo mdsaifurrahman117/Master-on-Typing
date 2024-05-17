@@ -14,24 +14,36 @@
 <body>
 <header>
             <nav>
-                        <div class="container-fluid text-center mb-5 pt-2 pb-2 bg-dark">
-                                    <img src="assets/Logo-White.png" alt="logo">
+                        <div class="container-fluid pt-2 pb-2 logo">
+                              <img src="assets/logo.png" alt="logo">
                         </div>
             </nav>
 </header>
-            <div class="container text-center">
-                        <div class="title">
-                                    <h1>Master on Typing</h1>
-                        </div>
-                        <p id="quote" class="fs-5 mt-5">Start typing to begin the test...</p>
-                        <div class="box gap-3">
-                                    <textarea id="input" class="d-block m-auto mb-3 mt-3 p-2 text-center w-lg-50 rounded" placeholder="Start typing here"></textarea>
-                                    <button class="btn btn-primary" onclick="startTest()">Start Test</button>
-                        </div>
-                        <p id="result" class="mt-3"></p>
-            </div>
+
+<main>
+          <div class="container">
+                  <button class="btn btn-primary ps-4 pe-4" id="start-button">Click or press enter to Start</button>
+                  <div class="elements" id="game-area">
+                        <div class="result" id="result">
+                              <div class="typing-speed"><p>Typing Speed : <span id="typing-speed">0</span> WPM</p></div>
+                              <div class="time"><p>Time : <span id="timer">0:00</span></p></div>
+                              <div class="accuracy" ><p>Accuracy : <span id="accuracy">0</span>%</p></div>
+                              <div class="Wrong" ><p>Mistakes : <span id="wrong">0</span></p></div>
+                    </div>
+                    <div class="typing-text">
+                              <p id="text" class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, blanditiis.</p>
+                              <textarea type="text" id="input" placeholder="Start typing............"></textarea>
+                    </div>
+                              <div class="button">
+                                    <button id="reset-button" class="btn btn-primary">Reset</button>
+                                    <button id="next-button" class="btn btn-primary">Next</button>
+                              </div>
+                  </div>
+          </div>
+</main>
+
 <footer>
-            <p class="container-fluid bg-dark text-light text-center p-2">&copy; copyright 2023 by MD. Saifur Rahman</p>
+            <p class="text-center p-2">&copy; copyright 2024 by <span>MD. Saifur Rahman</span></p>
 </footer>
 
             <!-- Bootstrap, jQuery and Custom Script -->
